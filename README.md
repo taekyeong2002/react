@@ -1,6 +1,10 @@
 # 202130118 송태경
 
 # 2025-04-03 강의
+<h2>function형 컴포넌트에서만 Hook을 사용하는 이유
+<p><h3>Class형 component는 lifecycle 함수를 통해서 상태 관리
+<h2>function형 component를 주로 사용하는 이유 
+<p><h3>Class형 component를 많이 볼 수 있기 때문에
 
 # 2025-03-20 강의
 <h2>의존성 관리와 package.json
