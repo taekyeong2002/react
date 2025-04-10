@@ -1,10 +1,29 @@
 # 202130118 송태경
 
+# 2025-04-01 강의
+## 사용자와 상호작용 하는 컴포넌트 만들기<p>
+### 컴포넌트는 무언가 "기억"하기 위해 state를 사용한다.<p>
+### React는 상태 기억을 위해 useState라는 Hook을 제공한다.<p>
+
+## props를 통해 데이터 전달하기 <p>
+### React의 component architectrue를 사용해서 재사용 할 수 있는 component를 만들어서 지저분하고 중복된 코드를 삭제한다.<p>
+### Board component를 만들고 ,Square component의 내용을 복사한다.<p>
+### Square component의 button을 하나만 남기고 모두 삭제한다.<p>
+### Board component의 button을 Square component로 교체한다.<p>
+### App에서 호출하는 component를 Square에서 Board로 바꿔준다.<p>
+### 정상적으로 출력이 되는지 확인한다.<p>
+## 여기까지 하면 component는 깔끔하게 정리 됐지만, 숫자 출력이 1만 나오게 된다.<p>
+### 이 문제를 해결하기 위해 props를 사용하여 각 사각형이 가져야 할 값을 부모 component (Board)에서 자식 component(Square)로 전달<p>
+### component를 호출하는 쪽이 부모 component 
+
 # 2025-04-03 강의
+
 <h2>function형 컴포넌트에서만 Hook을 사용하는 이유
-<p><h3>Class형 component는 lifecycle 함수를 통해서 상태 관리
-<h2>function형 component를 주로 사용하는 이유 
-<p><h3>Class형 component를 많이 볼 수 있기 때문에
+<h3>Class형 component는 lifecycle 함수를 통해서 상태 관리
+<h2>function형 component를 주로 사용하는 이유<p><h3>
+Class형 component를 많이 볼 수 있기 때문에
+<h2>component 간 데이터 공유
+<h3>
 
 # 2025-03-20 강의
 <h2>의존성 관리와 package.json
