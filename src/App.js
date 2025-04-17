@@ -1,43 +1,39 @@
-import { useState } from 'react';
 import './App.css'
 
-
-function Square() {
-  const [value, setValue] = useState(null);
-
+function square({ value }) {
   function handleClick() {
-    setValue("X");
+    console.log('clicked!');
   }
 
   return (
-   
+    <div>
       <button
       className="square"
       onClick={handleClick}
       >
         {value}
       </button>
-    
-  );
+    </div>
+  )
 }
 
  function Board() {
   return (
     <>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
+        <button className="square">1</button>
+        <button className="square">2</button>
+        <button className="square">3</button>
       </div>
       <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
+        <button className="square">4</button>
+        <button className="square">5</button>
+        <button className="square">6</button>
       </div>
       <div className="board-row">
-      <Square />
-      <Square />
-      <Square />
+        <button className="square">7</button>
+        <button className="square">8</button>
+        <button className="square">9</button>
       </div>
     </>
   );
