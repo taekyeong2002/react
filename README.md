@@ -2,7 +2,23 @@
 
 # 2025-04-17 강의
 ## static 끌어 올리기 
-- 
+- 사용자가 Borad의 왼쪽 위 사각형을 클릭하여 X를 추가하면 어떤 일이 발생하는지 정리
+
+- 1.buttondl Square로부터 onClick prop로 받은 함수가 실행된다.
+- 2.handleClick은 인수 0을 사용하여 squares 배열의 첫 번째 엘리먼트를 null에서 X로 업데이트 한다.
+- 3.Board 컴포넌트의 squares state가 업데이트되어 Board와 그 모든 자식이 다시 렌더링 된다 . 
+  > 이에따라 0인 Square 컴포넌트의 value prop이 null에서 X로 변경된다.
+- 최종적으로 사용자는 왼쪽 위 사각형을 클릭한 후 비어 있는 사각형이 X로 변경된 것을 확인 할 수 있다.
+
+## 중요
+
+- DOM button 엘리먼트의 onClick 어트리뷰트(속성)는 빌트인 컴포넌트이기 때문에 React에서 특별한 의미를 갖는다.
+
+- 사용자 정의 컴포넌트, 예를 들어 Square의 경우 이름은 사용자가 원하는 대로 지을 수 있다.
+
+- Square의 onSquareClick prop나 Board의 handleClick 함수에 어떠한 이름을 붙여도 코드는 동일하게 작동한다.
+
+- React에서는 주로 이벤트를 나타내는 prop에는 onSomething과 같은 이름을 사용하고, 이벤트를 처리하는 함수를 정의 할 때는 ahndleSomething과 같은 이름을 사용하낟.
 
 # 2025-04-10 강의
 ## 사용자와 상호작용 하는 컴포넌트 만들기<p>
@@ -10,8 +26,10 @@
 - React는 상태 기억을 위해 useState라는 Hook을 제공한다.<p>
 
 ## props를 통해 데이터 전달하기 <p>
+
 - React의 component architectrue를 사용해서 재사용 할 수 있는 component를 만들어서 지저분하고 중복된 코드를 삭제한다.<p>
-- Board component를 만들고 ,Square component의 내용을 복사한다.<p>
+- Board component를 만들고 ,Square component의 내용을 복사한다.
+
 - Square component의 button을 하나만 남기고 모두 삭제한다.<p>
 - Board component의 button을 Square component로 교체한다.<p>
 - App에서 호출하는 component를 Square에서 Board로 바꿔준다.<p>
