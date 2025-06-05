@@ -1,5 +1,12 @@
 # 202130118 송태경
 
+# 2025-06-05 강의
+ 
+ - Learn React 에는 중급과 고급 React에 관한 학습을 할 수 있도록 도와 준다.
+ - UI로 표현하기는 Quick Start에서 학습했던 내용의 심화 학습을 설명하고 있다.
+ - 상호작용 더하기는 State의 심화 학습을 설명하고 있다.
+ - State 관리하기는 고급 state관리 및 useState외에 Reducer와 Context Hook 등에 관해 설명하고 있다.
+ - 마지막으로 Escape Hatches는 React 외부의 시스템을 제어하고 동기화 하는 방법으로 고급 심화 과정을 다루고 있다.
 # 2025-05-29 강의
 
 ## 처음부터 React 앱 만들기
